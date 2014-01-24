@@ -38,7 +38,11 @@ typedef enum {
 + (TaplyticsManager*)sharedManager;
 
 // Start Taplytics With API Key Methods
++ (void)startTaplyticsAPIKey:(NSString*)apiKey;
+
 + (void)startTaplyticsAPIKey:(NSString*)apiKey liveUpdate:(BOOL)liveUpdate;
+
++ (void)startTaplyticsAPIKey:(NSString*)appID server:(TLServer)server;
 
 + (void)startTaplyticsAPIKey:(NSString*)appID server:(TLServer)server liveUpdate:(BOOL)liveUpdate;
 
