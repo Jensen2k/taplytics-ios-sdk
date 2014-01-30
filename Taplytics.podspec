@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.preserve_paths  = 'Taplytics.framework'
   s.source_files    = 'Taplytics.framework/**/*.h'
   s.xcconfig = {
-    'OTHER_LDFLAGS' => '$(inherited) -ObjC', 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Taplytics"' 
+    'OTHER_LDFLAGS' => '-ObjC', 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Taplytics"' 
   }
 end
